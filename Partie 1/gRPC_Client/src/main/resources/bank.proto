@@ -1,0 +1,32 @@
+syntax="proto3";
+option java_package=
+
+    "org.example.stubs";
+
+service BankService {
+  // Unary Model
+  rpc convert(ConvertCurrencyRequest) returns (ConvertCurrencyResponse);
+  //rpc getAccount(GetAccountRequest) returns (GetAccountResponse);
+  //rpc getListAccounts(GetListAccountsRequest) returns (GetListAccountsResponse);
+  // Server Streaming Model
+  rpc getCurrencyStream (ConvertCurrencyRequest) returns (stream ConvertCurrencyResponse);
+  //rpc getStreamOfAccountTransactions(GetStreamOfAccountTransactionRequest) returns (stream AccountTransaction);
+  // Client Streaming Model
+  rpc performStream (stream ConvertCurrencyRequest) returns (ConvertCurrencyResponse);
+  //rpc submitStreamOfTransactions(stream AccountTransaction) returns (PerformStreamOfTransactionsResponse);
+  // Bidirectional Streaming Model
+  rpc fullCurrencyStream (stream ConvertCurrencyRequest) returns ( stream ConvertCurrencyResponse);
+  //rpc executeStreamOfTransaction(stream AccountTransaction) returns (stream AccountTransaction);
+  //rpc submitTransaction(AccountTransaction) returns (google.protobuf.Empty);
+}
+message ConvertCurrencyRequest{
+  string currencyFrom= 1;
+  string currencyTo= 2;
+  double amount = 3;
+}
+message ConvertCurrencyResponse{
+  string currencyFrom= 1;
+  string currencyTo= 2;
+  double amount = 3;
+  double result = 4;
+}

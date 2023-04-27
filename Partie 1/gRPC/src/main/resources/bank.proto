@@ -1,0 +1,24 @@
+syntax="proto3";
+option java_package="ya.ourara.stubs";
+
+service BankService {
+  // Unary Model
+  rpc convert(ConvertCurrencyRequest) returns (ConvertCurrencyResponse);
+  // Server Streaming Model
+  rpc getCurrencyStream (ConvertCurrencyRequest) returns (stream ConvertCurrencyResponse);
+  // Client Streaming Model
+  rpc performStream (stream ConvertCurrencyRequest) returns (ConvertCurrencyResponse);
+  // Bidirectional Streaming Model
+  rpc fullCurrencyStream (stream ConvertCurrencyRequest) returns ( stream ConvertCurrencyResponse);
+}
+message ConvertCurrencyRequest{
+  string currencyFrom= 1;
+  string currencyTo= 2;
+  double amount = 3;
+}
+message ConvertCurrencyResponse{
+  string currencyFrom= 1;
+  string currencyTo= 2;
+  double amount = 3;
+  double result = 4;
+}
