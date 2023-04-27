@@ -20,7 +20,7 @@ while True:
     message_text = input("Enter a message (or 'exit' to quit): ")
     if message_text.lower() == 'exit':
         break
-    message = chat_pb2.Message(user_id='user1', text=message_text)
+    message = chat_pb2.Message(user_id='1', text=message_text)
     stream.on_next(message)
 
 # Close the stream
