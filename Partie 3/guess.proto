@@ -1,0 +1,24 @@
+syntax = "proto3";
+import "google/protobuf/timestamp.proto";
+option java_package=
+    "org.example.stubs";
+service GuessingGame {
+  // La méthode pour deviner le nombre secret
+  rpc Guess (stream GuessRequest) returns (GuessResponse) {}
+}
+
+message GuessRequest {
+  int32 guess = 1;
+}
+
+message GuessResponse {
+  enum GuessResult {
+    GUESS_RESULT_UNSPECIFIED = 0;
+    TOO_LOW = 1;
+    TOO_HIGH = 2;
+    CORRECT = 3;
+  }
+
+  GuessResult result = 1;
+  int32 winner = 2;
+}

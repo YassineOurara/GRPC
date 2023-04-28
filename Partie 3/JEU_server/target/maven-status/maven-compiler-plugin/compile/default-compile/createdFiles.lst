@@ -1,0 +1,4 @@
+org\example\stubs\gameGrpc$gameBaseDescriptorSupplier.class
+org\example\stubs\gameGrpc$gameFileDescriptorSupplier.class
+org\example\stubs\gameGrpc$gameMethodDescriptorSupplier.class
+org\example\stubs\gameGrpc$gameStub.class
