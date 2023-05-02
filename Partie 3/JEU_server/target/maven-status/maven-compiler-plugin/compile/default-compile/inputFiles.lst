@@ -1,5 +1,5 @@
-C:\Users\smart asus\OneDrive\Documents\GitHub\GRPC\Partie 3\JEU_server\src\main\java\org\example\server\ChatGrpcServer.java
+C:\Users\smart asus\OneDrive\Documents\GitHub\GRPC\Partie 3\JEU_server\src\main\java\org\example\stubs\GuessGrpc.java
+C:\Users\smart asus\OneDrive\Documents\GitHub\GRPC\Partie 3\JEU_server\src\main\java\org\example\stubs\GuessOuterClass.java
 C:\Users\smart asus\OneDrive\Documents\GitHub\GRPC\Partie 3\JEU_server\src\main\java\org\example\Main.java
-C:\Users\smart asus\OneDrive\Documents\GitHub\GRPC\Partie 3\JEU_server\src\main\java\org\example\stubs\Guess.java
-C:\Users\smart asus\OneDrive\Documents\GitHub\GRPC\Partie 3\JEU_server\src\main\java\org\example\stubs\GuessingGameGrpc.java
-C:\Users\smart asus\OneDrive\Documents\GitHub\GRPC\Partie 3\JEU_server\src\main\java\org\example\service\ChatGrpcService.java
+C:\Users\smart asus\OneDrive\Documents\GitHub\GRPC\Partie 3\JEU_server\src\main\java\org\example\server\GuessServer.java
+C:\Users\smart asus\OneDrive\Documents\GitHub\GRPC\Partie 3\JEU_server\src\main\java\org\example\service\GuessService.java
