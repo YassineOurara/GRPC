@@ -51,6 +51,9 @@ pic4
 
       1. Créer un serveur JEU GRPC :
       
+![Partie3_ClientsJava](https://user-images.githubusercontent.com/101317995/235791920-176b5d44-c561-4897-b630-2a73fd49e0b1.png)
+
+
 - Au démarrage le serveur choisit un nombre aléatoire entre 1 et 1000. 
      - Ensuite les clients GRPC doivent deviner en compétition le nombre secret.
      - le serveur répond à chaque fois avec les éventualités suivantes :
