@@ -4,8 +4,6 @@
 
 #### Première Partie :
 
-Reprendre les mêmes exemple de la démonstration vidéo pour implémenter les 4 modèles :
-
       Server
 
 ![Partie1-server](https://user-images.githubusercontent.com/101317995/235793046-419328f5-aa44-4fbb-b5ef-dd3960b72ca6.png)
@@ -54,21 +52,22 @@ Reprendre les mêmes exemple de la démonstration vidéo pour implémenter les 4
 
        1. Créer un serveur Chat GRPC
 
-pic1
+![Partie2-server](https://user-images.githubusercontent.com/101317995/235796878-838691bb-8ba7-445d-b3f3-476e5decddba.png)
 
       2. Tester le serveur Chat avec un client GRPC comme BloomRPC
 
-pic2
+![Partie2-bloomrpc](https://user-images.githubusercontent.com/101317995/235797175-57d0a95d-e89f-4bdf-8d33-8217616a739d.png)
+
 
        3. Créer un client GRPC Java
       
-pic3
+![partie2-3](https://user-images.githubusercontent.com/101317995/235797709-b2e92b89-8d06-48c7-866c-b8eed89e7beb.png)
 
       
        4. Créer un client GRPC Python
       
-pic4    
 
+![Partie2-clientPy](https://user-images.githubusercontent.com/101317995/235798012-8bebf054-78f6-42fd-9f9a-fa21f9f03c3f.png)
 
  
 
@@ -79,16 +78,15 @@ pic4
       
 ![Partie3_server](https://user-images.githubusercontent.com/101317995/235792280-edcf6e44-196b-4b82-ac6e-c748dcf78324.png)
 
+
+      2. Tester le serveur Chat avec un client GRPC comme BloomRPC :
       
-      2. Clients JAVA
+      
+![partie3-1](https://user-images.githubusercontent.com/101317995/235798725-bf74f4cd-10a8-434a-8a2d-a9f3c926714d.png)      
+![partie3-2](https://user-images.githubusercontent.com/101317995/235798710-fa18c91f-6556-4035-a1a7-8d7d0cfeba12.png)
+![partie3-3](https://user-images.githubusercontent.com/101317995/235798721-94505682-a5bf-4174-9393-ec76f74c3701.png)
+      
+      3. Clients JAVA
       
 ![Partie3_ClientsJava](https://user-images.githubusercontent.com/101317995/235791920-176b5d44-c561-4897-b630-2a73fd49e0b1.png)
 
-
-- Au démarrage le serveur choisit un nombre aléatoire entre 1 et 1000. 
-     - Ensuite les clients GRPC doivent deviner en compétition le nombre secret.
-     - le serveur répond à chaque fois avec les éventualités suivantes :
-        . Votre nombre est plus grand
-        . Votre nombre est plus petit
-        . BRAVO vous avez gagné et envoyer le gagnant aux clients
-        . Jeu terminé, le gagnant est ""Numéro du gagnant"
