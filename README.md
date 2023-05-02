@@ -2,19 +2,50 @@
 
 
 
-=> Première Partie :
-Reprendre les mêmes exemple de la démonstration vidéo pour implémenter les 4 modèles :
-- Unary Model
-- Server Sreaming Model
-- Client Streaming Model
-- BiDirectional Streaming Model
-Pour le cas d'une conversion de monnaie
+#### Première Partie :
 
-=> Deuxième partie
- 1. Créer un serveur Chat GRPC
- 2. Tester le serveur Chat avec un client GRPC comme BloomRPC
- 3. Créer un client GRPC Java
- 4. Créer un client GRPC Python
+Reprendre les mêmes exemple de la démonstration vidéo pour implémenter les 4 modèles :
+
+      Unary Model
+
+pic1
+
+      Server Sreaming Model
+
+pic2
+
+      Client Streaming Model
+      
+pic3
+
+      BiDirectional Streaming Model
+      
+pic4      
+      
+
+
+#### Deuxième partie
+
+       1. Créer un serveur Chat GRPC
+
+pic1
+
+      2. Tester le serveur Chat avec un client GRPC comme BloomRPC
+
+pic2
+
+       3. Créer un client GRPC Java
+      
+pic3
+
+      
+       4. Créer un client GRPC Python
+      
+pic4    
+
+
+ 
+
 
 => Troisième partie
  1. Créer un serveur JEU GRPC :
